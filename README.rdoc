@@ -1,0 +1,8 @@
+== README
+
+# Requirements
+  Refinery CMS
+  Imagemagic
+# Setup
+
+  - rails g refinery:cms --fresh-installation
