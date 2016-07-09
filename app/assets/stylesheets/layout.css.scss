@@ -36,8 +36,8 @@ body {
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
 
   #logo {
-    margin: 20px;
     font-size: 24px;
+    padding: 40px 10px 30px
   }
 
 }
@@ -78,6 +78,7 @@ body {
 }
 
 section#page{
+  margin-top: 60px;
   background-color: pink;
 }
 
