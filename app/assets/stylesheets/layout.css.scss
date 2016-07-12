@@ -21,8 +21,12 @@ a {
 
 body {
   width: auto;
-  max-width:990px;
+  max-width:1099px;
   margin: 0 auto;
+  background: #fbfbfb;
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #page_container {
