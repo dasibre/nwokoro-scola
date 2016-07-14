@@ -1,0 +1,17 @@
+#footer-links
+  %ul
+    %li=link_to 'About Us', page_path('about')
+    %li=link_to 'Contact Us', '#'
+    %li=link_to 'Areas of Practice', '#'
+
+#contact-info
+  %ul
+    %li
+      %a.phone-mobile{:href => 'tel:212-785-1060'} Telephone: (212) 785-1060
+    %li
+      Email: Direct@Nwokoroassociates.com
+    %li
+      Address: 82 Wall Street, Suite 610, New York, New York 10005
+
+#copyright
+  %p= t('.copyright', :year => Time.now.year,:site_name => Refinery::Core.site_name)

@@ -26,7 +26,6 @@ body {
   background: #fbfbfb;
   -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.08);
   box-shadow: 0 0 8px rgba(0,0,0,0.08);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #page_container {
@@ -127,4 +126,38 @@ section#side_body{
   background-color: red;
 }
 
-footer{}
+footer {
+  position: relative;
+  border-top: blue;
+  background: #333333;
+  height: 10em;
+  padding: 10px;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
+
+  li {
+    margin: 1em 0;
+  }
+
+  #contact-info {
+    float: left;
+  }
+
+  #footer-links {
+    float: left;
+    border-right: solid white;
+    width: 200px;
+    display: inline-block;
+    margin: 0 0 0 80px;
+  }
+
+  #copyright {
+    font-size: 10px;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+  }
+}
