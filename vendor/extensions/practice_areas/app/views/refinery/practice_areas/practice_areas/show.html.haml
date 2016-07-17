@@ -1,0 +1,19 @@
+- content_for :body_content_title do
+  = @practice_area.name
+- content_for :body do
+  %section
+    %h2= raw @practice_area.name
+  %section
+    %p
+      = raw @practice_area.blurb
+  %section
+    %p
+      = raw @practice_area.description
+- content_for :side_body do
+  %aside
+    %h2= t('.other')
+    %ul#practice_areas
+      - @practice_areas.each do |practice_area|
+        %li
+          = link_to practice_area.name, refinery.practice_areas_practice_area_path(practice_area)
+= render '/refinery/content_page'

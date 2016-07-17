@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Practice Area
+            reorder: Réordonner les Practice Areas
+            reorder_done: Fin de réordonnancement des Practice Areas
+          records:
+            title: Practice Areas
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Practice Area. Cliquer sur "Créer un(e) nouve(au/l/lle) Practice Area" pour créer votre premi(er/ère) practice area.'
+          practice_area:
+            view_live_html: Voir ce(t/tte) practice area <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) practice area
+            delete: Supprimer définitivement ce(t/tte) practice area
+      practice_areas:
+        show:
+          other: Autres Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

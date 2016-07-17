@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Lag en ny Practice Area
+            reorder: Endre rekkefølgen på Practice Areas
+            reorder_done: Ferdig å endre rekkefølgen Practice Areas
+          records:
+            title: Practice Areas
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Practice Areas enda. Klikk på "Lag en ny Practice Area" for å legge til din første practice area.
+          practice_area:
+            view_live_html: Vis hvordan denne practice area ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne practice area
+            delete: Fjern denne practice area permanent
+      practice_areas:
+        show:
+          other: Andre Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

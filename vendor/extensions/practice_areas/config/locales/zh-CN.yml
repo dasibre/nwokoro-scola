@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: 建立新的 Practice Area
+            reorder: 对 Practice Areas 重新排序
+            reorder_done: 对 Practice Areas 的重新排序结束
+          records:
+            title: Practice Areas
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Practice Areas yet. Click "Add New Practice Area" to add your first practice area.
+            no_items_yet: 目前没有 Practice Areas . 点击 "Add New Practice Area" 创建一个practice area.
+          practice_area:
+            view_live_html: 查看 practice area 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 practice area
+            delete: 永久删除 practice area
+      practice_areas:
+        show:
+          other: 其他 Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

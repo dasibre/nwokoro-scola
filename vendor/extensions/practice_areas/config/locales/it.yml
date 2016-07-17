@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Aggiungi Nuovo Practice Area
+            reorder: Riordina Practice Areas
+            reorder_done: Termina il Riordino di Practice Areas
+          records:
+            title: Practice Areas
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Practice Areas. Clicca "Aggiungi Nuovo Practice Area" per aggiungere il tuo primo practice area.
+          practice_area:
+            view_live_html: Guarda live questo practice area <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo practice area
+            delete: Rimuovi per sempre questo practice area
+      practice_areas:
+        show:
+          other: Altri Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

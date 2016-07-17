@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Yeni Ekle Practice Area
+            reorder: Tekrar sirala Practice Areas
+            reorder_done: Tekrar siralama tamamlandiPractice Areas
+          records:
+            title: Practice Areas
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Practice Areas yok henuz.  Tikla "Yeni Ekle Practice Area" eklemek senin ilk practice area.
+          practice_area:
+            view_live_html: Bunu canlu practice area goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle practice area
+            delete: Bunu Sil practice area sonsuza dek
+      practice_areas:
+        show:
+          other: Diger Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

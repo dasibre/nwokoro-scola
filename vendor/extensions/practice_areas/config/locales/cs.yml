@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Přidat Practice Area
+            reorder: Řadit Practice Areas
+            reorder_done: Konec řazení Practice Areas
+          records:
+            title: Practice Areas
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Practice Areas. Zvolte "Přidat Practice Area" pro přidání prvního practice area.
+          practice_area:
+            view_live_html: Zobrazit náhled practice area<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit practice area
+            delete: Smazat practice area
+      practice_areas:
+        show:
+          other: Další Practice Areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

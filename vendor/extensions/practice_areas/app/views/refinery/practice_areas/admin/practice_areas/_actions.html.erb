@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::PracticeAreas::Admin::PracticeAreasController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.practice_areas_admin_practice_areas_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_practice_areas_admin_practice_area_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::PracticeAreas::Admin::PracticeAreasController.sortable? && ::Refinery::PracticeAreas::PracticeArea.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.practice_areas_admin_practice_areas_path,
+                     t('.reorder', what:  "Practice Areas"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.practice_areas_admin_practice_areas_path,
+                      t('.reorder_done', what: "Practice Areas"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

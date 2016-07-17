@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      practice_areas:
+        title: Practice Areas
+#        article: masculino/femenino
+    practice_areas:
+      admin:
+        practice_areas:
+          actions:
+            create_new: Crear nuevo practice area
+            reorder: Reordenar practice areas
+            reorder_done: Reordenación de practice areas completada
+          records:
+            title: Practice Areas
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay practice areas todavía. Pulsa en "Crear nuevo Practice Area" para crear tu primer practice area.
+          practice_area:
+            view_live_html: Ver este practice area como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este practice area
+            delete: Borrar este practice area para siempre
+      practice_areas:
+        show:
+          other: Otros practice areas
+  activerecord:
+    attributes:
+      'refinery/practice_areas/practice_area':
+        name: Name
+        blurb: Blurb
+        description: Description

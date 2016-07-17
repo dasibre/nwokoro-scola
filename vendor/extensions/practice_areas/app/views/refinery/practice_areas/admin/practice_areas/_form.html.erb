@@ -1,0 +1,30 @@
+<%= form_for [refinery, :practice_areas_admin, @practice_area] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @practice_area,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:blurb, :description],
+                :object => "practice_areas/practice_area" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.practice_areas.admin.practice_areas.practice_area'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @practice_area.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
