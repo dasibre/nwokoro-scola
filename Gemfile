@@ -52,6 +52,7 @@ end
 group :production do
   gem 'pg'
   gem 'fog'
+  gem 'dragonfly-s3_data_store'
 end
 
 gem 'pry-rails'
