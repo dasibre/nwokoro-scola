@@ -1,0 +1,41 @@
+#contact-page {
+  .inquiries {
+    background: rgba(251,251,251,0.50);
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    padding: 5px;
+
+
+    #inquiry_message {
+      width: 400px;
+    }
+
+    form {
+      label {
+        width: 100px;
+      }
+      a {
+        color: #5134c6;
+        font-size: 12px;
+      }
+      input {
+        line-height: 25px;
+      }
+      .actions {
+        input {
+          background: #488dfe;
+          color: white;
+        }
+      }
+    }
+  }
+
+  section {
+      #contact-splash {
+        img {
+          width: 100%;
+        }
+      }
+  }
+}
