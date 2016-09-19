@@ -1,10 +1,11 @@
 $break-small: 500px;
+$break-large: 1200px;
 
 #contact-page {
   .inquiries {
     background-image: url(map.jpg);
     background-repeat: no-repeat;
-    background-position-y: 20%;
+    background-position-y: 15%;
     background-position-x: center;
     width: 100%;
     border: solid thin #4d91fe;
@@ -61,6 +62,11 @@ $break-small: 500px;
           width: 50%;
           right:40%;
         }
+
+        @media screen and (min-width: $break-large) {
+          right:25%;
+          width:20%
+        }
       }
 
       #contact-info {
@@ -69,6 +75,11 @@ $break-small: 500px;
         color: white;
         border: solid thin #4d91fe;
         border-bottom: solid thin white;
+
+        @media screen and (max-width: $break-small) {
+          font-size:15px;
+          width: 50%;
+        }
       }
 
   }
