@@ -1,8 +1,3 @@
 =raw(@page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym)) if Refinery::Pages.default_parts.any?
 .inquiries
-  #quote-action
-    %p
-      If you have been wronged, please fill out the form below or contact Nwokoro  Scola, Esquires for a free
-      consultation today. In your time of need rely on attorneys you can trust to right the wrongs committed against
-      you. Nwokoro  Scola, Esquires is a dynamic law firm that prides itself on the pursuit of justice through passionate legal representation on behalf of our clients.
   = render '/refinery/inquiries/inquiries/form', inquiry: @inquiry
