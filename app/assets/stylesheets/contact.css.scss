@@ -40,6 +40,8 @@ $break-large: 1200px;
           border: solid thin white;
           background: #4d91fe;
           color: white;
+          height:50px;
+          cursor: pointer;
         }
       }
     }
@@ -55,7 +57,7 @@ $break-large: 1200px;
       position: absolute;
       top: 40%;
       right: 15%;
-      width: 30%;
+      width: 250px;
       font-size: 20px;
       @media screen and (max-width: $break-small) {
         font-size: 12px;
