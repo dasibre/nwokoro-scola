@@ -15,6 +15,10 @@ module Refinery
         end
       end
 
+      config.to_prepare do
+	      ::ApplicationController.helper(PracticeAreasHelper)
+      end
+
       config.after_initialize do
         Refinery.register_extension(Refinery::PracticeAreas)
       end
