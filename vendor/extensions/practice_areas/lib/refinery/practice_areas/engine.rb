@@ -16,7 +16,7 @@ module Refinery
       end
 
       config.to_prepare do
-	      ::ApplicationController.helper(PracticeAreasHelper)
+        ::ApplicationController.helper(PracticeAreasHelper)
       end
 
       config.after_initialize do
