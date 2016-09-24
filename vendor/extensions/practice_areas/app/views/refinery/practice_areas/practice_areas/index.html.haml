@@ -6,6 +6,5 @@
           .box-heading
             = link_to practice_area.name, refinery.practice_areas_practice_area_path(practice_area)
           .box-body
-            = raw practice_area.blurb
-            = link_to 'more info', refinery.practice_areas_practice_area_path(practice_area)
+            = raw "#{practice_area.blurb}..#{link_to 'more info', refinery.practice_areas_practice_area_path(practice_area)}"
 = render '/refinery/content_page'
