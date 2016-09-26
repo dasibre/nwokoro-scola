@@ -57,7 +57,6 @@ end
 
 gem 'pry-rails'
 
-
 # Refinery CMS
 gem 'refinerycms', '~> 3.0'
 
@@ -71,3 +70,5 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
 gem 'refinerycms-practice_areas', path: 'vendor/extensions'
+
+gem 'jssor_content_sliders', git: 'https://github.com/dasibre/jssor_content_slider.git'
