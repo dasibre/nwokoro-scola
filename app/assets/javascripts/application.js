@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require jssor_slider.min
 //= require_tree .
+
+$(document).ready(function(){
+	$("span.nav-btn").click(function(){
+		$("ul.nav").toggle();
+	});
+});
