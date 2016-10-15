@@ -1,5 +1,7 @@
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600italic,600,400italic,300italic,300,700,700italic,800,800italic');
 @import url('//fonts.googleapis.com/css?family=Oswald:400,700,300');
+$break-small: 500px;
+$break-large: 1200px;
 
 html {
   background: url(body-bg.jpg)
@@ -16,6 +18,8 @@ h1, h2, h3 {
 a {
   color: #3420D3;
 }
+
+img {max-width:100%}
 
 #body_content_title {
   display: none;
@@ -51,6 +55,27 @@ body {
 
 }
 
+@media screen and (max-width: $break-small) {
+  footer {
+    margin-top: 150px;
+  }
+  .nav{
+    display:none;
+  }
+  .nav-btn {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .nav-btn:before {
+    content: "Menu";
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  display: block;
+}
+
 #menu {
   background: #343434;
   border-bottom: 2px solid #4d91fe;
@@ -62,6 +87,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
+
   }
   ul {
     list-style-type: none;
@@ -71,6 +97,10 @@ body {
     font: 300 14px/21px Oswald, Arial, Helvetica, sans-serif;
     overflow: hidden;
     background-color: #333;
+
+    @media screen and (max-width: $break-small) {
+      padding: 0;
+    }
 
     li {
       float: left;
@@ -83,6 +113,10 @@ body {
       }
       &.last {
         border-right: none;
+      }
+
+      @media screen and (max-width: $break-small) {
+        float:none;
       }
     }
   }
