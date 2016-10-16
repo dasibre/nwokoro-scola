@@ -177,6 +177,11 @@ footer {
   padding: 10px;
   color: #ffffff;
 
+  @media screen and (max-width: $break-small) {
+    font-size: 10px;
+    list-style: none;
+  }
+
   a {
     color: #ffffff;
   }
@@ -215,7 +220,7 @@ footer {
   }
 }
 
-/* simple grid */
+/**************************** simple grid ****************************************/
 [class*='grid'],
 [class*='col-'],
 [class*='mobile-'],
