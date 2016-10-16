@@ -187,6 +187,11 @@ footer {
 
   #contact-info {
     float: left;
+
+    @media screen and (max-width: $break-small) {
+      float: none;
+      padding-left: 30%;
+    }
   }
 
   #footer-links {
@@ -195,6 +200,11 @@ footer {
     width: 200px;
     display: inline-block;
     margin: 0 0 0 80px;
+
+    @media screen and (max-width: $break-small) {
+      width: 30%;
+      margin:0;
+    }
   }
 
   #copyright {
