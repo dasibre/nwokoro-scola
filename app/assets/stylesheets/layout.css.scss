@@ -57,7 +57,7 @@ body {
 
 @media screen and (max-width: $break-small) {
   footer {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .nav{
     display:none;
@@ -69,6 +69,14 @@ body {
   }
   .nav-btn:before {
     content: "Menu";
+  }
+
+  #home-page {
+    margin-top: 320px
+  }
+
+  #media-news-page {
+    margin-top: 350px
   }
 }
 
