@@ -52,6 +52,9 @@ body {
     font-size: 24px;
     padding: 40px 10px 30px
   }
+  @media screen and (max-width: $break-small) {
+    z-index: 1;
+  }
 
 }
 
@@ -69,14 +72,6 @@ body {
   }
   .nav-btn:before {
     content: "Menu";
-  }
-
-  #home-page {
-    margin-top: 320px
-  }
-
-  #media-news-page {
-    margin-top: 350px
   }
 }
 
