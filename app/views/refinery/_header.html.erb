@@ -3,4 +3,7 @@
 </h1>
 
 <span class="nav-btn"></span>
-<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+<nav id="menu" class="menu clearfix nav-collapse collapse navbar-responsive-collapse">
+  <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+</nav>
+
