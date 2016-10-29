@@ -1,7 +1,7 @@
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600italic,600,400italic,300italic,300,700,700italic,800,800italic');
 @import url('//fonts.googleapis.com/css?family=Oswald:400,700,300');
 $break-small: 600px;
-$break-large: 1200px;
+$break-large: 1290px;
 
 html {
   background: url(body-bg.jpg)
@@ -75,10 +75,6 @@ body {
   .nav-btn:before {
     content: "Menu";
   }
-}
-
-@media screen and (max-width: $break-large) {
-  display: block;
 }
 
 #menu {
