@@ -72,3 +72,4 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 gem 'refinerycms-practice_areas', path: 'vendor/extensions'
 
 gem 'jssor_content_sliders', git: 'https://github.com/dasibre/jssor_content_slider.git'
+gem 'refinerycms-media_news_presses', path: 'vendor/extensions'

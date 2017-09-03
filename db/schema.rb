@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706010844) do
+ActiveRecord::Schema.define(version: 20170903182713) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -80,6 +80,36 @@ ActiveRecord::Schema.define(version: 20160706010844) do
     t.string   "image_alt"
   end
 
+  create_table "refinery_inquiries_inquiries", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.boolean  "spam",       default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "refinery_inquiries_inquiries", ["id"], name: "index_refinery_inquiries_inquiries_on_id"
+
+  create_table "refinery_media_news_presses", force: :cascade do |t|
+    t.integer  "section_id_id"
+    t.string   "title"
+    t.datetime "date"
+    t.integer  "photo_id"
+    t.text     "blurb"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_media_news_presses_sections", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "refinery_page_part_translations", force: :cascade do |t|
     t.integer  "refinery_page_part_id", null: false
     t.string   "locale",                null: false
@@ -144,6 +174,15 @@ ActiveRecord::Schema.define(version: 20160706010844) do
   add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt"
 
+  create_table "refinery_practice_areas", force: :cascade do |t|
+    t.string   "name"
+    t.text     "blurb"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false
     t.string   "locale",               null: false
@@ -164,6 +203,21 @@ ActiveRecord::Schema.define(version: 20160706010844) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "refinery_settings", force: :cascade do |t|
+    t.string   "name"
+    t.text     "value"
+    t.boolean  "destroyable",     default: true
+    t.string   "scoping"
+    t.boolean  "restricted",      default: false
+    t.string   "form_value_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
+    t.string   "title"
+  end
+
+  add_index "refinery_settings", ["name"], name: "index_refinery_settings_on_name"
 
   create_table "seo_meta", force: :cascade do |t|
     t.integer  "seo_meta_id"

@@ -7,6 +7,9 @@ GIT
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-media_news_presses (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.4)
     refinerycms-practice_areas (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 3.0.3)
@@ -450,6 +453,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-inquiries (~> 3.0, >= 3.0.0)
+  refinerycms-media_news_presses!
   refinerycms-practice_areas!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
@@ -461,4 +465,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.12.5
+   1.14.3

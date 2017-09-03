@@ -14,3 +14,6 @@ Refinery::PracticeAreas::Engine.load_seed
 
 # Added by Refinery CMS Inquiries engine
 Refinery::Inquiries::Engine.load_seed
+
+# Added by Refinery CMS MediaNewsPresses extension
+Refinery::MediaNewsPresses::Engine.load_seed
