@@ -4,18 +4,23 @@
               :include_object_name => true %>
 
   <div class='field'>
-    <%= f.label :section -%>
-    <%= f.select(:section_id, @sections.collect { |section| [section.name, section.id] }) -%>
-  </div>
-
-  <div class='field'>
     <%= f.label :title -%>
     <%= f.text_field :title -%>
   </div>
 
   <div class='field'>
+    <%= f.label :section -%>
+    <%= f.select(:section_id, @sections.collect { |section| [section.name, section.id] }) -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :date -%>
     <%= f.datetime_select :date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
   </div>
 
   <div class='field'>

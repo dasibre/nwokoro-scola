@@ -29,7 +29,7 @@ en:
           records:
             title: Media News Presses
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Media News Presses yet. Click "Add New Media
+            no_items_yet: There are no Media News Press yet. Click "Add New Media
               News Press" to add your first media news press.
           media_news_press:
             view_live_html: View this media news press live <br/><em>(opens in a new

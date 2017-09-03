@@ -15,7 +15,7 @@ module Refinery
 
         # Only allow a trusted parameter "white list" through.
         def media_news_press_params
-          params.require(:media_news_press).permit(:section_id, :title, :date, :photo_id, :blurb)
+          params.require(:media_news_press).permit(:section_id, :title, :date, :photo_id, :blurb, :link)
         end
       end
     end
