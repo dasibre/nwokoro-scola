@@ -1,0 +1,54 @@
+ru:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: "Добавить Section"
+            reorder: "Изменить порядок Sections"
+            reorder_done: "Закончить изменять порядок Sections"
+          records:
+            title: Sections
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Sections" не найдено. Нажмите "Добавить Section"
+              чтобы создать section.
+          section:
+            view_live_html: "Просмотреть section вживую <br/><em>(в новом окне)</em>"
+            edit: "Редактировать section"
+            delete: "Удалить section навсегда"
+        media_news_presses:
+          actions:
+            create_new: "Добавить Media News Press"
+            reorder: "Изменить порядок Media News Presses"
+            reorder_done: "Закончить изменять порядок Media News Presses"
+          records:
+            title: Media News Presses
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Media News Presses" не найдено. Нажмите "Добавить
+              Media News Press" чтобы создать media news press.
+          media_news_press:
+            view_live_html: "Просмотреть media news press вживую <br/><em>(в новом
+              окне)</em>"
+            edit: "Редактировать media news press"
+            delete: "Удалить media news press навсегда"
+      sections:
+        show:
+          other: "Другие Sections"
+      media_news_presses:
+        show:
+          other: "Другие Media News Presses"
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

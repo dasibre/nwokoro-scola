@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @media_news_press.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Section</h1>
+    <p>
+      <%=raw @media_news_press.section %>
+    </p>
+  </section>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @media_news_press.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Date</h1>
+    <p>
+      <%=raw @media_news_press.date %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @media_news_press.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Blurb</h1>
+    <p>
+      <%=raw @media_news_press.blurb %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="media_news_presses">
+      <% @media_news_presses.each do |media_news_press| %>
+        <li>
+          <%= link_to media_news_press.title, refinery.media_news_presses_media_news_press_path(media_news_press) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

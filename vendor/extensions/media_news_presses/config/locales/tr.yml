@@ -1,0 +1,55 @@
+tr:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Yeni Ekle Section
+            reorder: Tekrar sirala Sections
+            reorder_done: Tekrar siralama tamamlandiSections
+          records:
+            title: Sections
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Sections yok henuz.  Tikla "Yeni Ekle Section"
+              eklemek senin ilk section.
+          section:
+            view_live_html: Bunu canlu section goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle section
+            delete: Bunu Sil section sonsuza dek
+        media_news_presses:
+          actions:
+            create_new: Yeni Ekle Media News Press
+            reorder: Tekrar sirala Media News Presses
+            reorder_done: Tekrar siralama tamamlandiMedia News Presses
+          records:
+            title: Media News Presses
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Media News Presses yok henuz.  Tikla "Yeni
+              Ekle Media News Press" eklemek senin ilk media news press.
+          media_news_press:
+            view_live_html: Bunu canlu media news press goruntule <br/><em>(yeni bir
+              pencerede acar)</em>
+            edit: Bunu Duzenle media news press
+            delete: Bunu Sil media news press sonsuza dek
+      sections:
+        show:
+          other: Diger Sections
+      media_news_presses:
+        show:
+          other: Diger Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

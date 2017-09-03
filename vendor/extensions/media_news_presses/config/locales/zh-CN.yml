@@ -1,0 +1,52 @@
+zh-CN:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: "建立新的 Section"
+            reorder: "对 Sections 重新排序"
+            reorder_done: "对 Sections 的重新排序结束"
+          records:
+            title: Sections
+            sorry_no_results: "对不起，未找到结果。"
+            no_items_yet: 目前没有 Sections . 点击 "Add New Section" 创建一个section.
+          section:
+            view_live_html: "查看 section 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 section"
+            delete: "永久删除 section"
+        media_news_presses:
+          actions:
+            create_new: "建立新的 Media News Press"
+            reorder: "对 Media News Presses 重新排序"
+            reorder_done: "对 Media News Presses 的重新排序结束"
+          records:
+            title: Media News Presses
+            sorry_no_results: "对不起，未找到结果。"
+            no_items_yet: 目前没有 Media News Presses . 点击 "Add New Media News Press"
+              创建一个media news press.
+          media_news_press:
+            view_live_html: "查看 media news press 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 media news press"
+            delete: "永久删除 media news press"
+      sections:
+        show:
+          other: "其他 Sections"
+      media_news_presses:
+        show:
+          other: "其他 Media News Presses"
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

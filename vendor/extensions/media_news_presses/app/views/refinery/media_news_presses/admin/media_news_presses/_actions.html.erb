@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::MediaNewsPresses::Admin::MediaNewsPressesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.media_news_presses_admin_media_news_presses_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_media_news_presses_admin_media_news_press_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::MediaNewsPresses::Admin::MediaNewsPressesController.sortable? && ::Refinery::MediaNewsPresses::MediaNewsPress.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.media_news_presses_admin_media_news_presses_path,
+                     t('.reorder', what:  "Media News Presses"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.media_news_presses_admin_media_news_presses_path,
+                      t('.reorder_done', what: "Media News Presses"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

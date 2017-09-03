@@ -1,0 +1,15 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(media_news_press) -%>">
+  <span class='title'>
+    <%= media_news_press.title %>
+  </span>
+
+  <span class='preview'></span>
+
+  <span class='actions'>
+    <%= action_icon(:preview, refinery.media_news_presses_media_news_press_path(media_news_press), t('.view_live_html')) %>
+    <%= action_icon(:edit,    refinery.edit_media_news_presses_admin_media_news_press_path(media_news_press), t('.edit') ) %>
+    <%= action_icon(:delete,  refinery.media_news_presses_admin_media_news_press_path(media_news_press), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: media_news_press.title)}}  ) %>
+  </span>
+</li>

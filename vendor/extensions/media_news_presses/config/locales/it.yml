@@ -1,0 +1,54 @@
+it:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Aggiungi Nuovo Section
+            reorder: Riordina Sections
+            reorder_done: Termina il Riordino di Sections
+          records:
+            title: Sections
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Sections. Clicca "Aggiungi Nuovo Section"
+              per aggiungere il tuo primo section.
+          section:
+            view_live_html: Guarda live questo section <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo section
+            delete: Rimuovi per sempre questo section
+        media_news_presses:
+          actions:
+            create_new: Aggiungi Nuovo Media News Press
+            reorder: Riordina Media News Presses
+            reorder_done: Termina il Riordino di Media News Presses
+          records:
+            title: Media News Presses
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Media News Presses. Clicca "Aggiungi
+              Nuovo Media News Press" per aggiungere il tuo primo media news press.
+          media_news_press:
+            view_live_html: Guarda live questo media news press <br/><em>(apre una
+              nuova finestra)</em>
+            edit: Modifica questo media news press
+            delete: Rimuovi per sempre questo media news press
+      sections:
+        show:
+          other: Altri Sections
+      media_news_presses:
+        show:
+          other: Altri Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

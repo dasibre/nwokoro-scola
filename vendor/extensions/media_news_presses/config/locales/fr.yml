@@ -1,0 +1,55 @@
+fr:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Section
+            reorder: Réordonner les Sections
+            reorder_done: Fin de réordonnancement des Sections
+          records:
+            title: Sections
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Section. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Section" pour créer votre premi(er/ère) section.
+          section:
+            view_live_html: Voir ce(t/tte) section <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) section
+            delete: Supprimer définitivement ce(t/tte) section
+        media_news_presses:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Media News Press
+            reorder: Réordonner les Media News Presses
+            reorder_done: Fin de réordonnancement des Media News Presses
+          records:
+            title: Media News Presses
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Media News Press. Cliquer
+              sur "Créer un(e) nouve(au/l/lle) Media News Press" pour créer votre
+              premi(er/ère) media news press.
+          media_news_press:
+            view_live_html: Voir ce(t/tte) media news press <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) media news press
+            delete: Supprimer définitivement ce(t/tte) media news press
+      sections:
+        show:
+          other: Autres Sections
+      media_news_presses:
+        show:
+          other: Autres Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

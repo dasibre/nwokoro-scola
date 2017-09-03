@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="sections">
+    <% @sections.each do |section| %>
+      <li>
+        <%= link_to section.name, refinery.media_news_presses_section_path(section) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

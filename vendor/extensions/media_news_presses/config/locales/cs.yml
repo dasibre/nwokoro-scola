@@ -1,0 +1,54 @@
+cs:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Přidat Section
+            reorder: "Řadit Sections"
+            reorder_done: Konec řazení Sections
+          records:
+            title: Sections
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Sections. Zvolte "Přidat Section"
+              pro přidání prvního section.
+          section:
+            view_live_html: Zobrazit náhled section<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit section
+            delete: Smazat section
+        media_news_presses:
+          actions:
+            create_new: Přidat Media News Press
+            reorder: "Řadit Media News Presses"
+            reorder_done: Konec řazení Media News Presses
+          records:
+            title: Media News Presses
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Media News Presses. Zvolte
+              "Přidat Media News Press" pro přidání prvního media news press.
+          media_news_press:
+            view_live_html: Zobrazit náhled media news press<br/><em>(otevře se v
+              novém okně)</em>
+            edit: Upravit media news press
+            delete: Smazat media news press
+      sections:
+        show:
+          other: Další Sections
+      media_news_presses:
+        show:
+          other: Další Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

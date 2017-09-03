@@ -1,0 +1,15 @@
+<%= form_for [refinery, :media_news_presses_admin, @section] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @section,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.sections.admin.sections.section'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @section.name) -%>
+<% end -%>

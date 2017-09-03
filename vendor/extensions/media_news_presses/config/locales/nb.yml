@@ -1,0 +1,55 @@
+nb:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Lag en ny Section
+            reorder: Endre rekkefølgen på Sections
+            reorder_done: Ferdig å endre rekkefølgen Sections
+          records:
+            title: Sections
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Sections enda. Klikk på "Lag en ny Section"
+              for å legge til din første section.
+          section:
+            view_live_html: Vis hvordan denne section ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne section
+            delete: Fjern denne section permanent
+        media_news_presses:
+          actions:
+            create_new: Lag en ny Media News Press
+            reorder: Endre rekkefølgen på Media News Presses
+            reorder_done: Ferdig å endre rekkefølgen Media News Presses
+          records:
+            title: Media News Presses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Media News Presses enda. Klikk på "Lag en ny
+              Media News Press" for å legge til din første media news press.
+          media_news_press:
+            view_live_html: Vis hvordan denne media news press ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne media news press
+            delete: Fjern denne media news press permanent
+      sections:
+        show:
+          other: Andre Sections
+      media_news_presses:
+        show:
+          other: Andre Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

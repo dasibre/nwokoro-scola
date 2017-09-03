@@ -1,0 +1,55 @@
+nl:
+  refinery:
+    plugins:
+      sections:
+        title: Sections
+      media_news_presses:
+        title: Media News Presses
+    media_news_presses:
+      admin:
+        sections:
+          actions:
+            create_new: Nieuwe Section toevoegen
+            reorder: De volgorde van de Sections wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Section-volgorde
+          records:
+            title: Sections
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sections. Druk op 'Nieuwe Section toevoegen'
+              om de eerste toe te voegen.
+          section:
+            view_live_html: Deze section op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze section
+            delete: Deze section definitief verwijderen
+        media_news_presses:
+          actions:
+            create_new: Nieuwe Media News Press toevoegen
+            reorder: De volgorde van de Media News Presses wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Media News Press-volgorde
+          records:
+            title: Media News Presses
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Media News Presses. Druk op 'Nieuwe Media
+              News Press toevoegen' om de eerste toe te voegen.
+          media_news_press:
+            view_live_html: Deze media news press op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze media news press
+            delete: Deze media news press definitief verwijderen
+      sections:
+        show:
+          other: Andere Sections
+      media_news_presses:
+        show:
+          other: Andere Media News Presses
+  activerecord:
+    attributes:
+      refinery/media_news_presses/section:
+        name: Name
+      refinery/media_news_presses/media_news_press:
+        section: Section
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb
