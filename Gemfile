@@ -58,7 +58,7 @@ end
 gem 'pry-rails'
 
 # Refinery CMS
-gem 'refinerycms', '~> 3.0'
+gem 'refinerycms', '~> 3.0.5'
 
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
