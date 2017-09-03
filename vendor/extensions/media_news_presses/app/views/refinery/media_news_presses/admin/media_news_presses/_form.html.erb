@@ -5,7 +5,7 @@
 
   <div class='field'>
     <%= f.label :section -%>
-    <%= f.text_field :section, :class => 'larger widest' -%>
+    <%= f.select(:section_id, @sections.collect { |section| [section.name, section.id] }) -%>
   </div>
 
   <div class='field'>

@@ -2,9 +2,9 @@ en:
   refinery:
     plugins:
       sections:
-        title: Sections
+        title: News Sections
       media_news_presses:
-        title: Media News Presses
+        title: Media News Press
     media_news_presses:
       admin:
         sections:

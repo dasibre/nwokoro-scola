@@ -3,9 +3,15 @@ module Refinery
     module Admin
       class MediaNewsPressesController < ::Refinery::AdminController
 
+        before_action :find_all_sections, :except => [:show, :destroy]
+
         crudify :'refinery/media_news_presses/media_news_press'
 
         private
+
+        def find_all_sections
+          @sections = Refinery::MediaNewsPresses::Section.all
+        end
 
         # Only allow a trusted parameter "white list" through.
         def media_news_press_params
