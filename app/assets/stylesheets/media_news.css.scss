@@ -55,6 +55,46 @@
   }
 
   #jssor_1 {
-    float:left;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    background-color: #24262e;
+    left: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    width: 800px;
+    height: 456px;
+
+    #arrows {
+      position:relative;
+      top: 100px;
+    }
+
+    span[data-u="arrowleft"] {
+      display:inline-block;
+      margin-right: 40px;
+    }
+    span[data-u="arrowright"] {
+      display:inline-block;
+      margin-left: 760px;
+    }
   }
+
+  [data-u="loading"] {
+    position: absolute;
+  }
+
+  [data-u="slides"] {
+    cursor: default;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 356px;
+  }
+
+  [data-u="thumbnavigator"] {
+    position: relative;
+    top: 355px;
+  }
+
 }
