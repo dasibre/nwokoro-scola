@@ -1,6 +1,8 @@
 module Refinery
   module MediaNewsPresses
     class MediaNewsPress < Refinery::Core::BaseModel
+      extend FriendlyId
+      friendly_id :title, use: [:slugged]
       self.table_name = 'refinery_media_news_presses'
 
 
