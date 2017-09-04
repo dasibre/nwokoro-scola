@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170903202633) do
+ActiveRecord::Schema.define(version: 20170904095019) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -102,7 +102,10 @@ ActiveRecord::Schema.define(version: 20170903202633) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "link"
+    t.string   "slug"
   end
+
+  add_index "refinery_media_news_presses", ["slug"], name: "index_refinery_media_news_presses_on_slug"
 
   create_table "refinery_media_news_presses_sections", force: :cascade do |t|
     t.string   "name"
