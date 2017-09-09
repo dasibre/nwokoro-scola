@@ -1,0 +1,12 @@
+<div id="news-links">
+  <div class="useful-links">
+    <h2>News Links</h2>
+    <ol class="news-link-list">
+      <% @news.each do |news_item| %>
+          <li class="news-link-list-item">
+            <%= link_to news_item.blurb, news_item.link %>
+          </li>
+      <% end %>
+    </ol>
+  </div>
+</div>
