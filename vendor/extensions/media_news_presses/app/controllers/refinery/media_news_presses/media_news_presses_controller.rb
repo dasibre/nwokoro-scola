@@ -4,6 +4,9 @@ module Refinery
 
       before_action :find_all_media_news_presses
       before_action :find_page
+      before_action :find_all_media_news_links, :only => [:index]
+      before_action :find_all_media_news_cases, :only => [:index]
+      before_action :find_all_press_release, :only => [:index]
 
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
@@ -20,6 +23,19 @@ module Refinery
       end
 
     protected
+
+      def find_all_media_news_links
+        @news_links = MediaNewsPress.news_links
+      end
+
+      def find_all_media_news_cases
+        @cases = MediaNewsPress.case_links
+      end
+
+      def find_all_press_release
+        @presses = MediaNewsPress.press_release
+      end
+
 
       def find_all_media_news_presses
         @media_news_presses = MediaNewsPress.order('position ASC')

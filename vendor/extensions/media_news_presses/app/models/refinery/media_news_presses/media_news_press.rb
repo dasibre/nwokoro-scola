@@ -14,7 +14,19 @@ module Refinery
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       #
       #   acts_as_indexed :fields => [:title]
+      class << self
+        def news_links
+          self.joins(:section).where('name = ?', 'news')
+        end
 
+        def case_links
+          self.joins(:section).where('name = ?', 'case')
+        end
+
+        def press_release
+          self.joins(:section).where('name = ?', 'press')
+        end
+      end
     end
   end
 end
