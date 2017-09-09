@@ -1,16 +1,11 @@
 <% content_for :body_content_title do %>
-  <%= @media_news_press.title %>
+  <%= @media_news_press.title %> Release
 <% end %>
 
 <% content_for :body do %>
   <section>
-    <h1><%=raw @media_news_press.section.name.capitalize %></h1>
-    <h4><%=raw @media_news_press.date %></h4>
-  </section>
-  <section>
-    <p>
-      <%= image_fu @media_news_press.photo, nil %>
-    </p>
+    <h1><%=raw "#{@media_news_press.section.name.capitalize} Release" %></h1>
+    <h4><%=raw @media_news_press.date.strftime("%B %d, %Y") %></h4>
   </section>
   <section>
     <p>
@@ -21,9 +16,9 @@
 
 <% content_for :side_body do %>
   <aside>
-    <h2><%= t('.other') %></h2>
+    <h2>Press Items</h2>
     <ul id="media_news_presses">
-      <% @media_news_presses.each do |media_news_press| %>
+      <% press_releases(@media_news_presses).each do |media_news_press| %>
         <li>
           <%= link_to media_news_press.title, refinery.media_news_presses_media_news_press_path(media_news_press) %>
         </li>
