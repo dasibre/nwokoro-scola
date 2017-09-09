@@ -1,12 +1,36 @@
 <div id="news-links">
   <div class="useful-links">
-    <h2>News Links</h2>
-    <ol class="news-link-list">
-      <% @news.each do |news_item| %>
-          <li class="news-link-list-item">
-            <%= link_to news_item.blurb, news_item.link %>
-          </li>
-      <% end %>
-    </ol>
+    <h4>Press Release</h4>
+    <ul>
+      <ol>
+        <% @presses.each do |news_item| %>
+            <li>
+              <%= item_link(news_item) %>
+            </li>
+        <% end %>
+      </ol>
+    </ul>
+  </div>
+  <div class="useful-links">
+    <h4>News Links</h4>
+    <ul>
+      <ol class="news-link-list">
+        <% @news_links.each do |news_item| %>
+            <li class="news-link-list-item">
+              <%= item_link(news_item) %>
+            </li>
+        <% end %>
+      </ol>
+    </ul>
+    <h4>Case Links</h4>
+    <ul>
+      <ol class="case-link-list">
+        <% @cases.each do |case_link| %>
+            <li class="case-link-list-item">
+              <%= item_link(case_link) %>
+            </li>
+        <% end %>
+      </ol>
+    </ul>
   </div>
 </div>
