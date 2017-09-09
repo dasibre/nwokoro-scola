@@ -1,8 +1,13 @@
 #media-news-page {
-  #media-slider {
-    width: 100%;
-    overflow: hidden;
-    background-color: #fffefe;
+  section#body {
+    float: left;
+    width: 70%;
+  }
+  section#side_body {
+    float: left;
+    width: 30%;
+    padding-bottom: 16px;
+    border-bottom: solid 1px;
   }
 
   #newslinks {
@@ -12,25 +17,33 @@
   #news-links {
     height:455px;
     overflow-y: scroll;
-    width:299px;
-    background-color: #fffefe;
+
+    ul {
+      margin: 0px;
+    }
+
+    ol {
+      margin: 0px;
+    }
+
+    h4 {
+      text-align: center;
+      margin:0px;
+      text-decoration: underline;
+    }
 
     .useful-links {
-      width:250px;
-      background-color: white;
-
       h3 {
         text-align: center;
       }
     }
 
-    .useful-links ol{
+    .useful-links ol {
       counter-reset: li;
       list-style: none;
       *list-style: decimal;
       font-size: 15px;
       padding: 0;
-      margin-bottom: 4em;
       width:300px;
 
     }
@@ -63,7 +76,7 @@
     overflow: hidden;
     visibility: hidden;
     width: 800px;
-    height: 456px;
+    height: 500px;
 
     #arrows {
       position:relative;
