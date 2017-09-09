@@ -1,9 +1,9 @@
 <% content_for :body_content_title do %>
-  <%= @media_news_press.title %> Release
+  <%= @media_news_press.title %>
 <% end %>
 
 <% content_for :body do %>
-  <section>
+  <section id="press-release">
     <h1><%=raw "#{@media_news_press.section.name.capitalize} Release" %></h1>
     <h4><%=raw @media_news_press.date.strftime("%B %d, %Y") %></h4>
   </section>
@@ -16,7 +16,7 @@
 
 <% content_for :side_body do %>
   <aside>
-    <h2>Press Items</h2>
+    <h2>Press Links</h2>
     <ul id="media_news_presses">
       <% press_releases(@media_news_presses).each do |media_news_press| %>
         <li>

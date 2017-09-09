@@ -1,4 +1,13 @@
 #media-news-page {
+  section#press-release {
+    h1 {
+      margin: 1px;
+    }
+
+    h4 {
+      margin: 0px;
+    }
+  }
   section#body {
     float: left;
     width: 70%;
