@@ -66,7 +66,7 @@ jssor_1_slider_init = function() {
 };
 
 jQuery(document).ready(function ($) {
-	if(document.getElementById('media-news-page')) {
+	if(document.getElementById('media-news-page-slider')) {
 		jssor_1_slider_init();
 	}
 });
