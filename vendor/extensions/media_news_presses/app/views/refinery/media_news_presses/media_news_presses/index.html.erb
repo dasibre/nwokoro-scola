@@ -1,39 +1,37 @@
  <% content_for :body do %>
-     <div id="jssor_1">
-       <div data-u="loading">
-         <div class="loader"></div>
-       </div>
-       <div data-u="slides">
-         <div data-p="144.50">
-           <img data-u="image" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvOXJxM3Q1dzlidV9fMTc2LmpwZyJdXQ/-176.jpg?sha=f03bd325e34151e7" />
-           <img data-u="thumb" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvOXJxM3Q1dzlidV9fMTc2LmpwZyJdXQ/-176.jpg?sha=f03bd325e34151e7" />
+       <div id="jssor_1">
+         <div data-u="loading">
+           <div class="loader"></div>
          </div>
-         <div data-p="144.50">
-           <img data-u="image" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvMml1bjRqenAweF9aaW5uaWFmbG93ZXJfNC5qcGciXV0/Zinniaflower-4.jpg?sha=18e143ab44d6f766" />
-           <img data-u="thumb" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvMml1bjRqenAweF9aaW5uaWFmbG93ZXJfNC5qcGciXV0/Zinniaflower-4.jpg?sha=18e143ab44d6f766" />
-         </div>
-       </div>
-       <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-         <div data-u="slides" style="cursor: default;">
-           <div data-u="prototype" class="p">
-             <div class="w">
-               <div data-u="thumbnailtemplate" class="t"></div>
-             </div>
-             <div class="c"></div>
+         <div data-u="slides">
+           <div data-p="144.50">
+             <img data-u="image" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvOXJxM3Q1dzlidV9fMTc2LmpwZyJdXQ/-176.jpg?sha=f03bd325e34151e7" />
+             <img data-u="thumb" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvOXJxM3Q1dzlidV9fMTc2LmpwZyJdXQ/-176.jpg?sha=f03bd325e34151e7" />
+           </div>
+           <div data-p="144.50">
+             <img data-u="image" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvMml1bjRqenAweF9aaW5uaWFmbG93ZXJfNC5qcGciXV0/Zinniaflower-4.jpg?sha=18e143ab44d6f766" />
+             <img data-u="thumb" src="/system/images/W1siZiIsIjIwMTcvMDkvMDQvMml1bjRqenAweF9aaW5uaWFmbG93ZXJfNC5qcGciXV0/Zinniaflower-4.jpg?sha=18e143ab44d6f766" />
            </div>
          </div>
-       </div>
-       <div id="arrows">
-         <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
-         <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
-       </div>
-     </div>
-     <br />
-     <% @media_news_presses.each do |media_news_press| %>
-         <div class="blurb">
-           <%= media_news_press.blurb %>
+         <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+           <div data-u="slides" style="cursor: default;">
+             <div data-u="prototype" class="p">
+               <div class="w">
+                 <div data-u="thumbnailtemplate" class="t"></div>
+               </div>
+               <div class="c"></div>
+             </div>
+           </div>
          </div>
-     <% end %>
+         <div id="arrows">
+           <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+           <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+         </div>
+       </div>
 <% end %>
+
+<% content_for :side_body do %>
+ <%= render '/shared/section' %>
+ <% end %>
 
 <%= render '/refinery/content_page' %>

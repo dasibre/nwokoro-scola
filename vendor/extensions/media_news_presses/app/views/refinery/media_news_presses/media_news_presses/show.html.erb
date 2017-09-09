@@ -4,31 +4,15 @@
 
 <% content_for :body do %>
   <section>
-    <h1>Section</h1>
-    <p>
-      <%=raw @media_news_press.section %>
-    </p>
+    <h1><%=raw @media_news_press.section.name.capitalize %></h1>
+    <h4><%=raw @media_news_press.date %></h4>
   </section>
   <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @media_news_press.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Date</h1>
-    <p>
-      <%=raw @media_news_press.date %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
     <p>
       <%= image_fu @media_news_press.photo, nil %>
     </p>
   </section>
   <section>
-    <h1>Blurb</h1>
     <p>
       <%=raw @media_news_press.blurb %>
     </p>
